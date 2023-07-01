@@ -12,3 +12,71 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+// Get references to the input and button elements
+var mobileNumberInput = document.getElementById("phn");
+var submitButton = document.getElementById("getAppLinkText");
+
+// Add event listener to the submit button
+submitButton.addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent form submission
+  // Invoke the mobile number validation function
+  validateMobileNumber();
+});
+
+
+mobileNumberInput.addEventListener("input", function() {
+    var inputValue = mobileNumberInput.value.trim();
+    var sanitizedValue = inputValue.replace(/\D/g, "").substring(0, 10);
+    mobileNumberInput.value = sanitizedValue;
+  });
+function validateMobileNumber() {
+
+  var mobileNumber = mobileNumberInput.value;
+
+  // Remove any non-digit characters from the input
+  mobileNumber = mobileNumber.substring(0, 10);
+
+  // Check if the entered value is a 10-digit number
+  if (mobileNumber.length === 10) {
+    // Valid mobile number
+    // console.log("Valid mobile number:", mobileNumber);
+    alert("The App Link will send on your mobile number within few seconds")
+  } else {
+    // Invalid mobile number
+    // console.log("Invalid mobile number. Please enter a 10-digit number.");
+    alert("Invalid mobile number. Please enter a 10-digit number.")
+  }
+  mobileNumberInput.value = ""
+}
+
+//  Form Validation
+var subBtn = document.getElementById("form-btn");
+subBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent form submission
+    // Invoke the mobile number validation function
+    validateForm();
+  });
+function validateForm() {
+    var nameInput = document.getElementById("name");
+    var emailInput = document.getElementById("email");
+    var messageInput = document.getElementById("message");
+  
+    // Retrieve the values entered in the input fields
+    var name = nameInput.value.trim();
+    var email = emailInput.value.trim();
+    var message = messageInput.value.trim();
+  
+    // Validate if any of the fields are empty
+    if (name === "" || email === "" || message === "") {
+      alert("Please fill in all fields.");
+      return false; // Prevent form submission
+    }
+    alert("Your message has been sent");
+
+    nameInput.value = ""
+    emailInput.value = ""
+    messageInput.value = ""
+    return true; // Allow form submission
+  }
+  
