@@ -1,0 +1,1107 @@
+@import url('https://fonts.cdnfonts.com/css/moga-rezeki-dua');
+
+/* Basic CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add fonts */
+
+@font-face {
+    font-family: 'moga_rezeki_duarezeki-dua';
+    src: url('moga-rezeki-dua-webfont.woff2') format('woff2'),
+        url('moga-rezeki-dua-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    font-family: 'MoGa ReZeKi DuA', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* HOME SECTION */
+
+.home-section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Home --> Background  */
+
+.blue-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Home/blueBg.png');
+    z-index: 1;
+}
+.sbt{
+    color: red;
+}
+.home-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Home/bgResized.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+
+/* topmost layer */
+.stars-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Home/starsBg.png');
+    z-index: 5;
+}
+
+
+/* Home --> Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.navbar ul li {
+    font-size: 1.3rem;
+    list-style: none;
+    padding: 20px;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    text-underline-offset: 3px;
+    transition: 1s;
+    letter-spacing: 1px;
+    background-color: #ffea00;
+    border-radius: 20%;
+
+}
+.navbar ul li a:hover{
+    color: black;
+}
+#nav-home-text {
+    /* text-decoration: underline; */
+    text-underline-offset: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* place the spaceShuttle, satellite and asteroid over the background using postion absolute */
+#spaceShuttle {
+    width: 300px;
+    position: absolute;
+    bottom: 53%;
+    left: 18%;
+}
+
+#satellite {
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+}
+#satellite1 {
+    position: absolute;
+    bottom: 46rem;
+    left: 16rem;
+    width: 7%;
+}
+#asteroid {
+    position: absolute;
+    
+    width: 120px;
+    bottom: 52%;
+    left: 32%;
+}
+
+/* Home --> Content */
+
+.home-central-content {
+    display: flex;
+    margin-top: 5rem;
+    margin-right: 2.5rem;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+}
+
+.right {
+    width: 50%;
+    margin-top: 4rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2%;
+}
+
+#logo {
+    width: 255px;
+    height: auto;
+}
+
+#home-text-content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.mobileBox {
+    background-image: url('/assets/Home/mobileNo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90px;
+    width: 65%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004258;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.mobileBox p {
+    position: absolute;
+    top: 35%;
+    left: 2%;
+}
+
+.AppLinkBox {
+    background-image: url('./assets/Home/getAppLink.png');
+    width: 194px;
+    height: 72px;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+
+
+/* GAME SECTION */
+
+.game-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.black-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/Home/blueBg.png');
+    z-index: 1;
+}
+.game-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.game-container>h1 {
+    font-size: 4rem;
+    z-index: 30;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+}
+
+
+#phoneImg {
+    height: 95%;
+    /* margin: auto; */
+    position: absolute;
+    bottom: -1%;
+    left: 10%;
+}
+
+#spaceMen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42%;
+}
+
+
+/* FEATURES SECTION */
+
+.features-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.features-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/Features/featuresBg.png');
+}
+
+.features-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#features-heading {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem 0;
+    font-size: 4rem;
+}
+
+.frames-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.frame {
+    width: 28%;
+    position: relative;
+    margin: 1rem;
+}
+
+.frame>img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-text {
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    z-index: 10;
+    max-width: 80%;
+}
+
+.feature-text>h3,
+.feature-text>p {
+    font-size: 1.8rem;
+    padding: 2%;
+    text-align: center;
+    padding: 13px;
+}
+
+.feature-text>p {
+    text-align: justify;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+/* Place the planets at their respective positions in features section */
+.ui-planet {
+    position: absolute;
+}
+
+#planet1 {
+    top: 1%;
+    right: 25%;
+    width: 330px;
+    width: 18%;
+}
+
+#planet2 {
+    top: 7%;
+    left: 27%;
+    width: 6%;
+}
+
+#planet3 {
+    top: 10%;
+    left: 6%;
+    width: 2%;
+}
+
+#planet4 {
+    top: 7%;
+    right: 3%;
+    width: 7%;
+}
+#planet5 {
+    top: 20%;
+    left: 33%;
+    width: 2%;
+}
+
+/* CONTACT US */
+.contact-section {
+    width: 100%;
+    height: 115vh;
+}
+
+.contactUsBg {
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/Contact-us/bgResized.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#spaceMen2 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.contact-div {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact-div>* {
+    margin: 1rem;
+    max-height: 100%;
+}
+
+#SpaceMen1 {
+    width: 18%;
+    height: auto;
+    margin-top: -11rem;
+    height: 51%;
+}
+
+.contactFormDiv {
+    width: 56%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+    margin-left: 4rem;
+}
+
+.left-contact-div {
+    width: 53%;
+    height: 54%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #041939, #001842, #00154a, #001152, #050b58);
+    align-items: center;
+    padding: 5%;
+    border: 1px solid white;
+    border-right: none;
+}
+
+.left-contact-div>h1 {
+    color: #fff;
+    /* padding: 2%; */
+    margin-top: -21px;
+    margin-bottom: 10%;
+    font-size: 1.8rem;
+    font-size: 3rem;
+}
+.left-contact-div>h2{
+    font-size: 1.7rem;
+    /* font-size: large; */
+    margin-top: 15%;
+    margin-bottom: 9%;
+}
+.left-contact-div>p {
+    color: #fff;
+    font-size:1rem;
+}
+
+.right-contact-div {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    background-image: linear-gradient(to bottom, #041939, #001842, #00154a, #001152, #050b58);
+    border: 1px solid white;
+}
+
+.form-div {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.form-div>*{
+    height: 25%;
+    width: 100%;
+    margin:2%;
+}
+.input-box{
+    margin-bottom:2%;
+    text-transform: uppercase;
+}
+
+
+input,textarea{
+    border:none;
+    background: transparent;
+    outline:none;
+    width:100%;
+    border-bottom: 2px solid white;
+    color:white;
+    line-height: 2rem;
+    text-transform: capitalize;
+}
+input:active{
+    background: transparent;
+}
+textarea{
+    max-height:78%;
+    width:100%;
+}
+.submit-btn{
+    height:25%;
+    width: 50%;
+    padding: 5%;
+    padding-left:0;
+}
+button{
+    border-radius: 2%;
+    width: 100%;
+    height: 59%;
+    cursor: pointer;
+    background: white;
+    color: red;
+    padding: 3%;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+.phone{
+    border-bottom: none;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+
+/* Styling components */
+.social-div {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.white-line {
+    height: 23%;
+    width: 0px;
+    border: 1px solid white;
+}
+
+.social-div>* {
+    margin: auto;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0.4rem 0;
+}
+
+.icon {
+    padding: 2px;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+    cursor: pointer;
+
+}
+.icon1 {
+    font-size: 2.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+
+}
+
+/* img 3 on central container in contact us section */
+#rocket {
+    width: 18%;
+    margin-top: -22rem;
+    margin-left: -1rem;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 22%;
+    margin-top: -7rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 9rem;
+    margin-top: 2rem;
+
+}
+
+.footer-nav>li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 42rem;
+    bottom: 5rem;
+}
+
+.social-links>* {
+    padding: 0.8rem;
+    width: 50px;
+}
+
+.copyright-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+@media(max-width: 1100px) {
+
+    /* Home section */
+    #spaceShuttle,
+    #asteroid {
+        display: none;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .home-central-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .home-bg {
+        opacity: 0.8;
+    }
+
+    .home-content {
+        width: 80%;
+        margin: 1rem;
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
+
+    /* Game section */
+
+    #spaceMan {
+        width: 50%;
+    }
+
+    #phoneImg {
+        height: 70%;
+        left: 12%;
+    }
+
+    /* Features section */
+    #planet1,
+    #planet2,
+    #planet3,
+    #planet4 {
+        top: 8%;
+    }
+
+    .frames-container {
+        margin: 0;
+    }
+
+    .frame {
+        margin: 0.5rem;
+        width: 24%;
+    }
+
+    .feature-text>p,
+    .feature-text>h3 {
+        font-size: 1rem;
+    }
+
+    /* contact section --> footer */
+    .footer-nav {
+        padding: 0.5rem;
+    }
+
+    .footer-nav>li {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .copyright-div {
+        padding: 0.5rem;
+    }
+
+    #spaceMen2 {
+        width: 20%;
+    }
+}
+
+@media(max-width:912px) {
+    .hamburger {
+        display: block;
+        z-index: 25;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 0%;
+        gap: 0;
+        flex-direction: column;
+        background-image: url('./assets/Home/blueBg.png');
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 20;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    /* features-section */
+    .features-section {
+        height: 160vh;
+    }
+
+    .frames-container {
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .frame {
+        width: 32vh;
+    }
+
+    /* contact section */
+    .contact-div {
+        flex-direction: column;
+    }
+
+    .contactFormDiv {
+        width: 80%;
+    }
+
+    #rocket,
+    #SpaceMen1 {
+        display: none;
+    }
+
+    #spaceMen2 {
+        width: 18%;
+    }
+}
+
+@media(max-width: 730px) {
+    .mobileBox {
+        width: 100%;
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+
+    #phoneImg {
+        height: 60%;
+        left: 0%;
+        right: 10%;
+    }
+
+    .feature-text>p,
+    .feature-text>h3 {
+        font-size: 0.7rem;
+    }
+
+    /* contact section */
+
+    .contactUsBg {
+        background-size: cover;
+    }
+
+    #SpaceMen1 {
+        display: none;
+    }
+
+    .contact-div {
+        height: 65%;
+    }
+
+    .footer {
+        height: 35%;
+    }
+
+    #spaceMen2 {
+        bottom: 9%;
+        width: 23%;
+    }
+
+    .contactFormDiv {
+        width: 95%;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:570px) {
+    .nav-menu {
+        width: 100%;
+    }
+
+    #spaceMen {
+        height: 33vh;
+        width: auto;
+    }
+
+    /* contact section */
+    .copyright-div {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    /* contact form */
+    .contactFormDiv{
+        flex-direction: column;
+        height: 100%;
+    }
+    .left-contact-div{
+        width: 60%;
+        height:35%;
+        border: 2px solid white;
+        border-bottom:none;
+        border-radius: 3%;
+    }
+    .right-contact-div{
+        width:80%;
+        height:65%;
+        border-radius: 3%;
+    }
+}
+
+@media(max-width:425px) {
+    .main-container {
+        width: 100%;
+        height: 100%;
+        font-family: 'MoGa ReZeKi DuA', sans-serif;
+        color: white;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #logo {
+        width: 155px;
+        height: auto;
+    }
+    #home-text-content {
+        padding-top: 18px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .mobileBox {
+        width: 100%;
+        height: 4rem;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 11rem;
+    }
+    .phone {
+        border-bottom: none;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .AppLinkBox {
+        background-image: url(./assets/Home/getAppLink.png);
+        width: 194px;
+        height: 72px;
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        margin: 7px;
+        cursor: pointer;
+        position: absolute;
+        top: 15rem;
+    }
+    #satellite {
+        position: absolute;
+        bottom: 2px;
+        right: 10px;
+        width: 15%;
+    }
+    .game-container>h1 {
+        font-size: 3rem;
+        z-index: 30;
+        position: absolute;
+        top: 10px;
+        left: 37%;
+    }
+    #spaceMen {
+        height: 47vh;
+        width: 67%;
+    }
+    #phoneImg {
+        height: 60%;
+        left: 12%;
+        right: 10%;
+        top: 45%;
+    }
+    #features-heading {
+        position: relative;
+    width: fit-content;
+    margin-bottom: 4rem;
+    padding: 1rem 0;
+    font-size: 3rem;
+    }
+    #planet3 {
+        top: 10%;
+        left: 6%;
+        width: 6%;
+    }
+    #planet2 {
+        top: 7%;
+        left: 22%;
+        width: 12%;
+    }
+    #planet1 {
+        /* top: 1%; */
+        right: 12%;
+        width: 330px;
+        width: 28%;
+        margin-top: -1.8rem;
+    }
+    #planet5 {
+        top: 13%;
+        left: 36%;
+        width: 4%;
+    }
+    .frame {
+        width: 53%;
+    /* height: 112%; */
+    position: relative;
+    top: 3rem;
+    margin: 1rem;
+    }
+    
+    .feature-text>h3 {
+        font-size: 18px;
+        margin-left: -19px;
+        width: 124%;
+        margin-top: -18px;
+    }
+    .feature-text>p{
+        font-size: 13px;
+    }
+    #features-heading {
+        position: relative;
+        width: fit-content;
+        margin-bottom: 4rem;
+        padding: 1rem 0;
+        font-size: 2rem;
+    }
+    .left-contact-div {
+        visibility: hidden;
+    }
+    .right-contact-div {
+        width: 87%;
+        height: 80%;
+        margin-left: -100px;
+        margin-top: -8rem;
+        /* border-radius: 3%; */
+    }
+    #satellite1{
+        visibility: hidden;
+    }
+    .copyright-div {
+        text-align: center;
+        font-size: 10px;
+        margin-left: 0rem;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 7rem;
+        bottom: 1rem;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-left: -2rem;
+        margin-top: 57px;
+    }
+    .footer-nav>li {
+        font-size: 19px;
+        margin-top: -10px;
+        padding: -0.3rem;
+    }
+    #spaceMen2 {
+        bottom: 9%;
+        width: 37%;
+    }
+    
+    .mobileBox>p {
+        position: absolute;
+        top: 10%;
+        left: 0.8%;
+    }
+
+    .contact-div {
+        height: 60%;
+    }
+
+    .footer {
+        height: 40%;
+    }
+
+    .form-div{
+        padding:0.5rem;
+    }
+}
+/* Media Query */
+/* @media (min-width: 1025px) and (max-height: 1440px)
+{
+    .main-container {
+        width: 100%;
+        height: 100%;
+        font-family: 'MoGa ReZeKi DuA', sans-serif;
+        color: white;
+        overflow: hidden;
+    }
+    #spaceShuttle {
+        width: 300px;
+    position: absolute;
+    bottom: 52%;
+    left: 22%;
+    }
+    #asteroid {
+        position: absolute;
+        
+        width: 120px;
+        bottom: 52%;
+        left: 32%;
+    }
+    .frames-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .contact-div {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 42rem;
+        bottom: 5rem;
+    }
+    
+    .copyright-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 3rem;
+        margin-left: 8rem;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 9rem;
+        margin-top: 2rem;
+    
+    }
+    #rocket {
+        width: 18%;
+        margin-top: -22rem;
+        margin-left: -1rem;
+    }
+} */

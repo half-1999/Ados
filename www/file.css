@@ -1,0 +1,77 @@
+.inputTag{
+ outline: none;
+    border: none;
+    background-color:#00317300;
+    font-size: 18px;
+	letter-spacing: 2px;
+    color:white;
+	letter-spacing: 3px;
+	text-align:center;
+}
+.otp{
+ outline: none;
+    border: none;
+    background-color:#00ffff00;
+    font-size: 21px;
+	letter-spacing: 35px;
+    color:white;
+	text-align:center;
+}
+
+.check_btn{
+font-size:25px;
+border-radius: 50px;
+width:30px;
+height:30px;
+
+}
+
+input[type="text"]{
+	font-family:MoGa-ReZeKi-DuA;
+}
+
+input[type="number"]{
+	font-family:MoGa-ReZeKi-DuA;
+}
+
+::placeholder {
+  color: #003173;
+  opacity: 0.5; 
+   font-family:MoGa-ReZeKi-DuA;
+   text-transform: lowercase;
+   text-align:center;
+}
+
+input:invalid {
+  border-color: red;
+}
+.inputTag_aunthentication{
+ outline: none;
+    border: none;
+    background-color:#00317300;
+    font-size: 18px;
+	letter-spacing: 7px;
+    color:white;
+
+}
+
+input[type="email"]{
+	font-family:MoGa-ReZeKi-DuA;
+	 outline: none;
+    border: none;
+    background-color:#00317300;
+    font-size: 18px;
+	letter-spacing: 2px;
+     text-align:center;
+    color:white;
+}
+.email{
+ outline: none;
+    border: none;
+    background-color:#00317300;
+    font-size: 18px;
+	letter-spacing: 2px;
+    color:white;
+  text-transform: lowercase;
+  text-align:center;
+}

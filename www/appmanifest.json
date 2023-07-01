@@ -1,0 +1,17 @@
+{
+	"name": "ADOS",
+	"short_name": "ADOS",
+	"description": "com.comelyen.ados",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffffff"
+}
