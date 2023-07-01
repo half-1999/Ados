@@ -6,12 +6,28 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
+// document.querySelectorAll(".nav-link").forEach((n) =>
+//   n.addEventListener("click", () => {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
+
+//     window.scrollTo(0, 0);
+//   })
+// );
+
 document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
+
+    // Hide the hamburger icon (optional)
+    // hamburger.style.display = "none";
   })
 );
+
 
 // Get references to the input and button elements
 var mobileNumberInput = document.getElementById("phn");

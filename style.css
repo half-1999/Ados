@@ -324,6 +324,7 @@ a {
     padding: 2%;
     text-align: center;
     padding: 13px;
+    color: yellow;
 }
 
 .feature-text>p {
@@ -634,11 +635,22 @@ button{
     margin-left: 8rem;
 }
 
-@media(max-width: 1100px) {
+@media(max-width:2560px){
+    
+    
+
+}
+
+@media(max-width: 1024px) {
 
     /* Home section */
-    #spaceShuttle,
     #asteroid {
+        /* width: 24%; */
+        width: 10%;
+    margin-left: 3rem;
+    }
+    #satellite1
+    {
         display: none;
     }
 
@@ -691,31 +703,152 @@ button{
         width: 24%;
     }
 
-    .feature-text>p,
-    .feature-text>h3 {
+    .feature-text>p{
         font-size: 1rem;
+    }
+
+    .feature-text>h3 {
+        font-size: 1.5rem;
     }
 
     /* contact section --> footer */
     .footer-nav {
         padding: 0.5rem;
     }
-
+    .contact-div {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 4rem;
+    }
+    .left-contact-div>h1 {
+        color: #fff;
+        /* padding: 2%; */
+        margin-top: -21px;
+        margin-bottom: 10%;
+        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+    
+    #rocket {
+        width: 14%;
+        margin-top: -22rem;
+        margin-left: -1rem;
+    }
     .footer-nav>li {
         font-size: 1rem;
         padding: 0.7rem;
     }
 
     .copyright-div {
-        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-top: 7.5rem;
+        margin-left: 8rem;
     }
 
     #spaceMen2 {
         width: 20%;
     }
+    .footer {
+        width: 100%;
+        height: 22%;
+        margin-top: -13rem;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 31rem;
+        bottom: 6rem;
+    }
+    .contactFormDiv {
+        width: 56%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -14rem;
+        margin-left: 4rem;
+    }
+    #spaceMen2 {
+        position: absolute;
+        bottom: 6%;
+        right: 0%;
+    }
+    #logo {
+        width: 200px;
+    height: auto;
+    margin-left: 23rem;
+    margin-top: 9rem;
+
+    }
+    #home-text-content {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        margin-left: 23rem;
+    }
+    .mobileBox {
+        background-image: url(/assets/Home/mobileNo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 90px;
+        width: 65%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #004258;
+        font-size: 1.2rem;
+        position: relative;
+        margin-left: 25rem;
+    }
+    .phone {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 13px;
+        margin-right: auto;
+        margin-top: 3px;
+        width: 91%;
+        border: none;
+    }
+    .AppLinkBox {
+        background-image: url(./assets/Home/getAppLink.png);
+        width: 194px;
+        height: 72px;
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        margin: 7px;
+        cursor: pointer;
+        margin-left: 23rem;
+        margin-top: 2rem;
+    }
+    .frames-container {
+        margin-top: 8rem;
+    }
+    .frame {
+        margin: 0.5rem;
+        width: 31%;
+    }
+    #features-heading {
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        padding: 1rem 0;
+        font-size: 3rem;
+    }
 }
 
-@media(max-width:912px) {
+@media(max-width:768px) {
     .hamburger {
         display: block;
         z-index: 25;
@@ -786,6 +919,47 @@ button{
 
     #spaceMen2 {
         width: 18%;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 20rem;
+        bottom: 6rem;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-top: 5rem;
+    }
+    .left-contact-div>h1 {
+        color: #fff;
+        /* padding: 2%; */
+        margin-top: -21px;
+        margin-bottom: 10%;
+        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+    #satellite1{
+        opacity: 0;
+    }
+    #features-heading ,.container>h1 {
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        padding: 1rem 0;
+        font-size: 3rem;
+    }
+    .feature-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        z-index: 10;
+        max-width: 80%;
     }
 }
 
@@ -874,6 +1048,9 @@ button{
     }
 }
 
+
+
+/* Mobile Responsive */
 @media(max-width:425px) {
     .main-container {
         width: 100%;
@@ -965,8 +1142,8 @@ button{
         margin-bottom: 15px;
     }
     #frame1{
-        margin-left: -83px;
-        margin-top: 46px;
+        margin-left: -125px;
+    margin-top: 46px;
     }
     .simple{
 
@@ -978,17 +1155,17 @@ button{
 .feature-text {
     position: absolute;
     top: 61%;
-    left: -25%;
+    left: -61%;
     z-index: 10;
     max-width: 90%;
 }
     #frame2{
-        margin-left: 46px;
+        margin-left: 96px;
         margin-top: 54px;
     }
     #frame3{
-        margin-left: -83px;
-        margin-top: 46px;
+        margin-left: -125px;
+    margin-top: 46px;
     }
     #spaceMen {
         height: 47vh;
@@ -996,9 +1173,9 @@ button{
     }
     #phoneImg {
         height: 60%;
-        left: 6%;
-        right: 10%;
-        top: 45%;
+    left: 15%;
+    right: 10%;
+    top: 45%;
     }
     #features-heading {
         position: relative;
@@ -1030,7 +1207,7 @@ button{
         width: 4%;
     }
     .frame {
-        width: 53%;
+        width: 38%;
     /* height: 112%; */
     position: relative;
     top: 3rem;
@@ -1038,20 +1215,24 @@ button{
     }
     
     .feature-text>h3 {
-        font-size: 33px;
-        margin-left: -19px;
-        width: 124%;
-        margin-top: -18px;
-        color: yellow;
+        font-size: 22px;
+    margin-left: -19px;
+    width: 124%;
+    margin-top: -18px;
+    color: yellow;
     }
     .feature-text>p{
-        font-size: 20px;
+        font-size: 15px;
     }
     #simple{
-        margin-left: 109px;
-    margin-top: -20px;
-    width: 114%;
+        margin-left: 210px;
+        margin-top: -8px;
+        width: 114%;
     }
+    #dbl{
+        margin-top: 1px;
+    }
+    
     #features-heading {
         position: relative;
         width: fit-content;
@@ -1083,15 +1264,15 @@ button{
         align-items: center;
         position: absolute;
         left: 7rem;
-        bottom: 1rem;
+        bottom: 2rem;
     }
     .footer-nav {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin-left: -2rem;
-        margin-top: 107px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: -2rem;
+    margin-top: 52px;
     }
     .footer-nav>li {
         font-size: 19px;
@@ -1122,73 +1303,107 @@ button{
         padding:0.5rem;
     }
 }
-/* Media Query */
-/* @media (min-width: 1025px) and (max-height: 1440px)
-{
-    .main-container {
-        width: 100%;
-        height: 100%;
-        font-family: 'MoGa ReZeKi DuA', sans-serif;
-        color: white;
-        overflow: hidden;
+@media(max-width:375px){
+    .frame {
+        width: 38%;
+        /* height: 112%; */
+        position: relative;
+        top: 3rem;
+        margin: 1rem;
     }
-    #spaceShuttle {
-        width: 300px;
-    position: absolute;
-    bottom: 52%;
-    left: 22%;
+    .phone {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: -13px;
+        width: 91%;
     }
-    #asteroid {
-        position: absolute;
-        
-        width: 120px;
-        bottom: 52%;
-        left: 32%;
+    .feature-text>p {
+        font-size: 13px;
     }
-    .frames-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
+    #frame1 ,#frame3{
+        margin-left: -112px;
+        margin-top: 46px;
     }
-    .contact-div {
-        width: 100%;
-        height: 75%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
+    #frame2 {
+        margin-left: 85px;
+        margin-top: 54px;
     }
-    .social-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 42rem;
-        bottom: 5rem;
+    #simple {
+        margin-left: 186px;
+        margin-top: -8px;
+        width: 114%;
     }
     
-    .copyright-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin-top: 3rem;
-        margin-left: 8rem;
+    #dbl {
+        margin-top: -20px;
     }
-    .footer-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin-left: 9rem;
-        margin-top: 2rem;
-    
+    #simple {
+        margin-left: 186px;
+        margin-top: -17px;
+        width: 114%;
     }
-    #rocket {
-        width: 18%;
-        margin-top: -22rem;
-        margin-left: -1rem;
+    .feature-text {
+        position: absolute;
+        top: 69%;
+        left: -61%;
+        z-index: 10;
+        max-width: 90%;
     }
-} */
+    .feature-text>h3 {
+        font-size: 19px;
+        margin-left: -19px;
+        width: 124%;
+        margin-top: -18px;
+        color: yellow;
+    }
+
+}
+@media(max-width:320px){
+    .phone {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 11px;
+        margin-right: auto;
+        margin-top: -18px;
+        width: 91%;
+    }
+    #phoneImg {
+        height: 60%;
+        left: 3%;
+        right: 10%;
+        top: 45%;
+    }
+    #frame1, #frame3 {
+        margin-left: -95px;
+        margin-top: 46px;
+    }
+    #frame2 {
+        margin-left: 73px;
+        margin-top: 54px;
+    }
+    #simple {
+        margin-left: 148px;
+        margin-top: -17px;
+        width: 136%;
+    }
+    .feature-text>p {
+        font-size: 12px;
+    }
+    .feature-text>h3 {
+        font-size: 16px;
+        margin-left: -19px;
+        width: 124%;
+        margin-top: -18px;
+        color: yellow;
+    }
+    #dblp {
+        margin-top: -14px;
+        margin-left: -6px;
+    }
+    #dbl {
+        margin-top: -12px;
+    }
+
+}
