@@ -865,25 +865,43 @@ button{
     }
     #logo {
         width: 155px;
-        height: auto;
+    height: auto;
+    margin-left: 19%;
+    margin-right: auto;
     }
+    .hamburger {
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right: 8px;
+    }
+    .home-content {
+        width: 80%;
+        margin: 1rem;
+        position: absolute;
+        top: 11%;
+        left: 10%;
+    }
+    
     #home-text-content {
         padding-top: 18px;
         padding-bottom: 40px;
         text-align: center;
         font-size: 15px;
+        margin-left: -31px;
+    margin-right: auto;
     }
     .mobileBox {
-        width: 100%;
-        height: 4rem;
-        font-size: 1.2rem;
-        position: absolute;
-        top: 11rem;
+        top: -1rem;
+    margin-left: -15px;
+    margin-right: auto;
     }
     .phone {
-        border-bottom: none;
         font-size: 1.5rem;
-        text-align: center;
+    text-align: center;
+    margin-left: 13px;
+    margin-right: auto;
+    margin-top: -10px;
+    width: 91%;
     }
     .AppLinkBox {
         background-image: url(./assets/Home/getAppLink.png);
@@ -896,19 +914,56 @@ button{
         cursor: pointer;
         position: absolute;
         top: 15rem;
+        margin-left: -13px;
+    margin-right: auto;
     }
     #satellite {
         position: absolute;
         bottom: 2px;
         right: 10px;
-        width: 15%;
+        width: 20%;
     }
     .game-container>h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         z-index: 30;
         position: absolute;
         top: 10px;
         left: 37%;
+    }
+    .frames-container {
+        flex-direction: column;
+        height: 70%;
+    }
+    .frame>img {
+        width: 120%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+    #frame1{
+        margin-left: -83px;
+        margin-top: 46px;
+    }
+    .simple{
+
+    }
+    .play{
+
+    }
+
+.feature-text {
+    position: absolute;
+    top: 61%;
+    left: -25%;
+    z-index: 10;
+    max-width: 90%;
+}
+    #frame2{
+        margin-left: 46px;
+        margin-top: 54px;
+    }
+    #frame3{
+        margin-left: -83px;
+        margin-top: 46px;
     }
     #spaceMen {
         height: 47vh;
@@ -916,7 +971,7 @@ button{
     }
     #phoneImg {
         height: 60%;
-        left: 12%;
+        left: 6%;
         right: 10%;
         top: 45%;
     }
@@ -958,13 +1013,19 @@ button{
     }
     
     .feature-text>h3 {
-        font-size: 18px;
+        font-size: 33px;
         margin-left: -19px;
         width: 124%;
         margin-top: -18px;
+        color: yellow;
     }
     .feature-text>p{
-        font-size: 13px;
+        font-size: 20px;
+    }
+    #simple{
+        margin-left: 109px;
+    margin-top: -20px;
+    width: 114%;
     }
     #features-heading {
         position: relative;
@@ -1005,7 +1066,7 @@ button{
         align-items: center;
         padding: 1rem;
         margin-left: -2rem;
-        margin-top: 57px;
+        margin-top: 107px;
     }
     .footer-nav>li {
         font-size: 19px;
@@ -1013,8 +1074,9 @@ button{
         padding: -0.3rem;
     }
     #spaceMen2 {
-        bottom: 9%;
-        width: 37%;
+        bottom: 13%;
+    right: -4%;
+    width: 44%;
     }
     
     .mobileBox>p {
