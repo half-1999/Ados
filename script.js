@@ -96,3 +96,6 @@ function validateForm() {
     return true; // Allow form submission
   }
   
+  const currentYearElement = document.getElementById("currentYear");
+const currentYear = new Date().getFullYear();
+currentYearElement.textContent = currentYear;

@@ -1289,8 +1289,8 @@ button{
         margin-top: -8px;
         width: 114%;
     }
-    #dbl{
-        margin-top: 1px;
+    #dbl {
+        margin-top: -8px;
     }
     
     #features-heading {
@@ -1333,7 +1333,7 @@ button{
     align-items: center;
     padding: 1rem;
     margin-left: -2rem;
-    margin-top: 215px;
+    margin-top: 210px;
     }
     .footer-nav>li {
         font-size: 19px;
