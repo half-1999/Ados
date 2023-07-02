@@ -631,7 +631,7 @@ button{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin-top: 3rem;
+    margin-top: 7rem;
     margin-left: 8rem;
 }
 
@@ -853,6 +853,60 @@ button{
         display: block;
         z-index: 25;
     }
+    #spaceShuttle {
+        width: 300px;
+        position: absolute;
+        bottom: 52%;
+        left: 29%;
+        display: none;
+
+    }
+    #asteroid{
+        display: none;
+    }
+    #home-text-content {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        margin-left: 23rem;
+        width: 63%;
+    }
+    .mobileBox {
+        background-image: url(/assets/Home/mobileNo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 90px;
+        width: 65%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #004258;
+        font-size: 1.2rem;
+        position: relative;
+        margin-left: 21rem;
+    }
+    .phone {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 13px;
+        margin-right: auto;
+        margin-top: -9px;
+        width: 91%;
+        border: none;
+    }
+    #satellite{
+        display: none;
+    }
+    #spaceMen {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
+    
+    
+    
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -900,7 +954,7 @@ button{
     }
 
     .frame {
-        width: 32vh;
+        width: 31vh;
     }
 
     /* contact section */
@@ -918,7 +972,7 @@ button{
     }
 
     #spaceMen2 {
-        width: 18%;
+        width: 28%;
     }
     .social-links {
         display: flex;
@@ -956,10 +1010,15 @@ button{
     }
     .feature-text {
         position: absolute;
-        top: 50%;
+        top: 46%;
         left: 10%;
         z-index: 10;
         max-width: 80%;
+    }
+    .footer {
+        width: 100%;
+        height: 22%;
+        margin-top: -16rem;
     }
 }
 
@@ -1070,6 +1129,7 @@ button{
     height: auto;
     margin-left: 19%;
     margin-right: auto;
+    margin-top: 7.5rem;
     }
     .hamburger {
         cursor: pointer;
@@ -1086,11 +1146,12 @@ button{
     
     #home-text-content {
         padding-top: 18px;
-        padding-bottom: 40px;
-        text-align: center;
-        font-size: 15px;
-        margin-left: -31px;
-    margin-right: auto;
+    /* padding-bottom: 40px; */
+    text-align: center;
+    font-size: 15px;
+    margin-left: -31px;
+    margin-right: 0rem;
+    margin-top: -1rem;
     }
     .mobileBox {
         top: -1rem;
@@ -1115,7 +1176,7 @@ button{
         margin: 7px;
         cursor: pointer;
         position: absolute;
-        top: 15rem;
+        top: 24rem;
         margin-left: -13px;
     margin-right: auto;
     }
@@ -1210,8 +1271,7 @@ button{
         width: 38%;
     /* height: 112%; */
     position: relative;
-    top: 3rem;
-    margin: 1rem;
+    top: -1rem;
     }
     
     .feature-text>h3 {
@@ -1255,8 +1315,9 @@ button{
     }
     .copyright-div {
         text-align: center;
-        font-size: 10px;
-        margin-left: 0rem;
+    font-size: 10px;
+    margin-left: 0rem;
+    margin-top: 1rem;
     }
     .social-links {
         display: flex;
@@ -1272,7 +1333,7 @@ button{
     align-items: center;
     padding: 1rem;
     margin-left: -2rem;
-    margin-top: 52px;
+    margin-top: 215px;
     }
     .footer-nav>li {
         font-size: 19px;
@@ -1305,11 +1366,19 @@ button{
 }
 @media(max-width:375px){
     .frame {
-        width: 38%;
+        width: 37%;
         /* height: 112%; */
         position: relative;
         top: 3rem;
         margin: 1rem;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 5.5rem;
+        bottom: 2rem;
     }
     .phone {
         font-size: 20px;
@@ -1346,10 +1415,10 @@ button{
     }
     .feature-text {
         position: absolute;
-        top: 69%;
-        left: -61%;
-        z-index: 10;
-        max-width: 90%;
+    top: 69%;
+    left: -65%;
+    z-index: 10;
+    max-width: 90%;
     }
     .feature-text>h3 {
         font-size: 19px;
@@ -1368,6 +1437,14 @@ button{
         margin-right: auto;
         margin-top: -18px;
         width: 91%;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 4rem;
+        bottom: 2rem;
     }
     #phoneImg {
         height: 60%;
