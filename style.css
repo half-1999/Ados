@@ -135,10 +135,10 @@ a {
     right: 10px;
 }
 #satellite1 {
-    position: absolute;
-    bottom: 46rem;
-    left: 16rem;
-    width: 7%;
+        position: absolute;
+        bottom: 54rem;
+        left: 16rem;
+        width: 7%;
 }
 #asteroid {
     position: absolute;
