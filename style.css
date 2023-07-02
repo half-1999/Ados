@@ -125,8 +125,8 @@ a {
 #spaceShuttle {
     width: 300px;
     position: absolute;
-    bottom: 53%;
-    left: 18%;
+    bottom: 52%;
+    left: 17%;
 }
 
 #satellite {
@@ -136,16 +136,15 @@ a {
 }
 #satellite1 {
         position: absolute;
-        bottom: 54rem;
-        left: 16rem;
+        bottom: 45rem;
+        left: 15rem;
         width: 7%;
 }
 #asteroid {
     position: absolute;
-    
-    width: 120px;
-    bottom: 52%;
-    left: 32%;
+    width: 110px;
+    bottom: 51%;
+    left: 33%;
 }
 
 /* Home --> Content */
@@ -591,7 +590,10 @@ button{
 .footer {
     width: 100%;
     height: 22%;
-    margin-top: -7rem;
+    margin-top: -10rem;
+}
+.footer p{
+    font-size: 1.5rem;
 }
 
 .footer-nav {
@@ -618,12 +620,12 @@ button{
     align-items: center;
     position: absolute;
     left: 42rem;
-    bottom: 5rem;
+    bottom: 6rem;
 }
 
 .social-links>* {
     padding: 0.8rem;
-    width: 50px;
+    width: 70px;
 }
 
 .copyright-div {
@@ -635,14 +637,42 @@ button{
     margin-left: 8rem;
 }
 
-@media(max-width:2560px){
-    
+/* @media(max-width:1440px){
+    #spaceShuttle {
+        width: 347px;
+        position: absolute;
+        bottom: 52%;
+        left: 19.5rem;
+    }
+    #asteroid {
+        position: absolute;
+        width: 110px;
+        bottom: 52%;
+        left: 38%;
+    }
+    .feature-text>h3{
+        font-size: 2.3rem;
+        padding: 2%;
+        text-align: center;
+        /* padding: 13px; */
+        /* color: yellow;
+    }
+    #satellite1 {
+        position: absolute;
+        bottom: 53rem;
+        left: 15rem;
+        width: 7%;
+    }
+    .footer {
+        width: 100%;
+        height: 22%;
+        margin-top: -7rem;
+    } */
     
 
-}
+/* } */
 
 @media(max-width: 1024px) {
-
     /* Home section */
     #asteroid {
         /* width: 24%; */
@@ -1023,7 +1053,7 @@ button{
 }
 
 @media(max-width: 730px) {
-    .mobileBox {
+    /* .mobileBox {
         width: 100%;
         height: 4rem;
         font-size: 1.2rem;
@@ -1038,11 +1068,11 @@ button{
     .feature-text>p,
     .feature-text>h3 {
         font-size: 0.7rem;
-    }
+    } */
 
     /* contact section */
 
-    .contactUsBg {
+    /* .contactUsBg {
         background-size: cover;
     }
 
@@ -1065,31 +1095,31 @@ button{
 
     .contactFormDiv {
         width: 95%;
-    }
+    } */
 
-    .footer-nav {
+    /* .footer-nav {
         flex-direction: column;
-    }
+    } */
 }
 
 @media(max-width:570px) {
-    .nav-menu {
+    /* .nav-menu {
         width: 100%;
     }
 
     #spaceMen {
         height: 33vh;
         width: auto;
-    }
+    } */
 
     /* contact section */
-    .copyright-div {
+    /* .copyright-div {
         text-align: center;
         font-size: 0.8rem;
-    }
+    } */
 
     /* contact form */
-    .contactFormDiv{
+    /* .contactFormDiv{
         flex-direction: column;
         height: 100%;
     }
@@ -1104,7 +1134,7 @@ button{
         width:80%;
         height:65%;
         border-radius: 3%;
-    }
+    } */
 }
 
 
@@ -1129,7 +1159,7 @@ button{
     height: auto;
     margin-left: 19%;
     margin-right: auto;
-    margin-top: 7.5rem;
+    margin-top: 0.5rem;
     }
     .hamburger {
         cursor: pointer;
@@ -1145,18 +1175,26 @@ button{
     }
     
     #home-text-content {
-        padding-top: 18px;
-    /* padding-bottom: 40px; */
-    text-align: center;
-    font-size: 15px;
-    margin-left: -31px;
-    margin-right: 0rem;
-    margin-top: -1rem;
+        
+        width: 104%;
+        margin-left: -31px;
+        
     }
     .mobileBox {
-        top: -1rem;
-    margin-left: -15px;
-    margin-right: auto;
+        background-image: url(/assets/Home/mobileNo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90px;
+    width: 107%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004258;
+    font-size: 1.2rem;
+    position: relative;
+    margin-left: -2rem;
+    margin-top: 0rem;
     }
     .phone {
         font-size: 1.5rem;
@@ -1176,9 +1214,18 @@ button{
         margin: 7px;
         cursor: pointer;
         position: absolute;
-        top: 24rem;
+        top: 22rem;
         margin-left: -13px;
     margin-right: auto;
+    }
+    .contactFormDiv {
+        width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+    margin-left: -4.2rem;
     }
     #satellite {
         position: absolute;
@@ -1290,7 +1337,7 @@ button{
         width: 114%;
     }
     #dbl {
-        margin-top: -8px;
+        margin-top: 1px;
     }
     
     #features-heading {
@@ -1324,16 +1371,18 @@ button{
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 7rem;
+        left: 6rem;
         bottom: 2rem;
     }
     .footer-nav {
-        display: flex;
+        display: block;
+    text-align: center;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     margin-left: -2rem;
-    margin-top: 210px;
+    margin-top: 212px;
+    color: yellow;
     }
     .footer-nav>li {
         font-size: 19px;
@@ -1377,8 +1426,11 @@ button{
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 5.5rem;
+        left: 4.5rem;
         bottom: 2rem;
+    }
+    #dblp{
+        margin-top: -1rem;
     }
     .phone {
         font-size: 20px;
@@ -1406,7 +1458,7 @@ button{
     }
     
     #dbl {
-        margin-top: -20px;
+        margin-top: -16px;
     }
     #simple {
         margin-left: 186px;
@@ -1430,6 +1482,43 @@ button{
 
 }
 @media(max-width:320px){
+    .AppLinkBox {
+        background-image: url(./assets/Home/getAppLink.png);
+        width: 194px;
+        height: 72px;
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        margin: 7px;
+        cursor: pointer;
+        position: absolute;
+        top: 24rem;
+        margin-left: -21px;
+        margin-right: auto;
+    }
+    .frame {
+        width: 41%;
+        /* height: 112%; */
+        position: relative;
+        top: 3rem;
+        margin: 1rem;
+    }
+    .feature-text {
+        position: absolute;
+        top: 69%;
+        left: -57%;
+        z-index: 10;
+        max-width: 90%;
+    }
+    .contactFormDiv {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1rem;
+        margin-left: -2.2rem;
+    }
     .phone {
         font-size: 20px;
         text-align: center;
@@ -1443,8 +1532,15 @@ button{
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 4rem;
+        left: 3rem;
         bottom: 2rem;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0.4rem 0;
+        margin-left: -7px;
     }
     #phoneImg {
         height: 60%;
