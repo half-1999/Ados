@@ -54,8 +54,14 @@
                   <li class="nav-item">
                     <a href="#contactUs" class="nav-link">Contact Us</a>
                   </li>
+                  <li>
+                    <a href="./terms.html" class="nav-link">T&C</a>
+                  </li>
+                  <li>
+                    <a href="./policy.html" class="nav-link">Privacy Policy</a>
+                  </li>
                   <li class="nav-item">
-                    <a href="./download.html" class="nav-link">Download</a>
+                    <a href="./download.html?referral=ADOSWEB">Download</a>
                   </li>
                 </ul>
                 <div class="hamburger">
@@ -94,12 +100,14 @@
                     real money.
                   </h2>
 
-                  <div class="mobileBox">
-                    <input type="tel" id="phn" class="phone" placeholder="+91 Mobile Number"/>
+                  <!-- <div class="mobileBox"> -->
+                    <!-- <input type="tel" id="phn" class="phone" placeholder="+91 Mobile Number"/> -->
                     <!-- <p id="mobileNoText">+91 Mobile Number</p> -->
-                  </div>
+                  <!-- </div> -->
                   <div class="AppLinkBox">
-                    <button id="getAppLinkText" class="image-button">Get App link</button>
+                    <!-- <button id="getAppLinkText" class="image-button"> -->
+                      <a href="./download.html">Get App link</a>
+                      <!-- </button> -->
                   </div>
                 </div>
               </div>
@@ -227,14 +235,15 @@
             <div class="contactFormDiv">
               <!--* left div  -->
               <div class="left-contact-div">
-                <h1>Contact Us</h1>
-                <h2>Get in touch with us</h2>
+                <p>Get in touch with us</p>
+                <br>
                 <p>Get information and support</p>
+                <br>
+                <p id="gmail">contact@aimcomely.com</p>
               </div>
               <!-- * Right div -->
-              <div class="right-contact-div">
+              <!-- <div class="right-contact-div">
 
-                <!-- *actual form -->
                 <div class="form-div">
                   <div class="input-box">
                     <label for="name">Your Name</label>
@@ -255,7 +264,6 @@
                     <button type="submit" id="form-btn"> <a href="" class="sbt">SUBMIT</a> </button>
                   </div>
                 </div>
-                <!-- * styling components -->
                 <div class="social-div">
                   <p class="upper-right-traingle">◥</p>
                   <div class="white-line"></div>
@@ -268,7 +276,7 @@
                   <p class="bottom-right-traingle">◢</p>
                 </div>
 
-              </div>
+              </div> -->
             </div>
 
             <!--img2  (rocket ) -->
@@ -300,24 +308,38 @@
                 <a href="#contactUs">Contact Us</a>
               </li>
               <li>
-                <a href="./download.html">Download</a>
+                <a href="./terms.html">T&C</a>
+              </li>
+              <li>
+                <a href="./policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="./download.html?referral=ADOSWEB">Download</a>
               </li>
             </ul>
 
-            <div class="social-links">
+            <!-- <div class="social-links">
               <a href="https://www.instagram.com"><i class="fa-brands fa-instagram icon1"></i></a>
               <a href="https://www.twitter.com"><i class="fa-brands fa-twitter icon1"></i></a>
               <a href="https://www.facebook.com"><i class="fa-brands fa-facebook icon1"></i></a>
-            </div>
-            <div class="copyright-div">
-              <p>
-                copyright© <p id="currentYear"></p>. All rights reserved Comely Enterprise Pvt Ltd.
-              </p>
+            </div> -->
+            <div class="copyright-div" id="rights">
+              <div class="copy" id="copy">
+                <span id="currentYear"></span>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </div>
     <script src="./script.js"></script>
+    <script>
+      const currentYear = new Date().getFullYear();
+      // document.getElementById('currentYear').textContent = currentYear;
+      document.getElementById('currentYear').textContent = `Ados is a proprietary product of Comely Enterprises private Limited.
+                                                            ©️ ${currentYear} COMELY ENTERPRISES PRIVATE LIMITED. ALL RIGHTS RESERVED.`
+
+  </script>
   </body>
+  
 </html>

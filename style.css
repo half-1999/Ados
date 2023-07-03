@@ -63,7 +63,9 @@
     background-image: url('/assets/Home/starsBg.png');
     z-index: 5;
 }
-
+.copy{
+    width: 60%;
+}
 
 /* Home --> Navbar */
 
@@ -423,16 +425,22 @@ a {
 }
 
 .left-contact-div {
-    width: 53%;
+    width: 73%;
     height: 54%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #041939, #001842, #00154a, #001152, #050b58);
+    /* text-align: center; */
+    /* background-image: linear-gradient(to bottom, #041939, #001842, #00154a, #001152, #050b58); */
     align-items: center;
     padding: 5%;
-    border: 1px solid white;
-    border-right: none;
+    /* border: 1px solid white; */
+    /* border-right: 1rem; */
+    margin-left: 14rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#currentYear{
+    font-size: 25px;
 }
 
 .left-contact-div>h1 {
@@ -440,8 +448,14 @@ a {
     /* padding: 2%; */
     margin-top: -21px;
     margin-bottom: 10%;
+    margin-left: 20%;
     font-size: 1.8rem;
     font-size: 3rem;
+}
+#gmail{
+    color: yellow;
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
 .left-contact-div>h2{
     font-size: 1.7rem;
@@ -451,7 +465,7 @@ a {
 }
 .left-contact-div>p {
     color: #fff;
-    font-size:1rem;
+    font-size:2rem;
 }
 
 .right-contact-div {
@@ -635,7 +649,7 @@ button{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin-top: 7rem;
+    margin-top: 3rem;
     margin-left: 8rem;
 }
 
@@ -673,6 +687,30 @@ button{
 /* } */
 
 @media(max-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'MoGa ReZeKi DuA', sans-serif;
+    
+    }
+    .left-contact-div {
+        width: 73%;
+        height: 54%;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+        /* background-image: linear-gradient(to bottom, #041939, #001842, #00154a, #001152, #050b58); */
+        align-items: center;
+        padding: 5%;
+        /* border: 1px solid white; */
+        /* border-right: 1rem; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
     /* Home section */
     #asteroid {
         /* width: 24%; */
@@ -779,8 +817,8 @@ button{
         justify-content: center;
         align-items: center;
         padding: 1rem;
-        margin-top: 7.5rem;
-        margin-left: 8rem;
+        margin-top: 4.5rem;
+        margin-left: 6rem;
     }
 
     #spaceMen2 {
@@ -890,6 +928,9 @@ button{
         left: 29%;
         display: none;
 
+    }
+    #currentYear {
+        font-size: 16px;
     }
     #simple{
         margin-top: -14px;
@@ -1359,7 +1400,10 @@ button{
         font-size: 2rem;
     }
     .left-contact-div {
-        visibility: hidden;
+        margin-left: 25%;
+        margin-top: 21%;
+        font-size: 4px;
+        width: 100%;
     }
     .right-contact-div {
         width: 87%;
@@ -1373,9 +1417,10 @@ button{
     }
     .copyright-div {
         text-align: center;
-    font-size: 10px;
-    margin-left: 0rem;
-    margin-top: 1rem;
+        font-size: 10px;
+        margin-left: -10rem;
+        margin-top: -2rem;
+        width: 176%;
     }
     .social-links {
         display: flex;
@@ -1417,7 +1462,8 @@ button{
     }
 
     .footer {
-        height: 40%;
+        height: 36%;
+        margin-top: -19rem;
     }
 
     .form-div{
@@ -1432,6 +1478,7 @@ button{
         top: 3rem;
         margin: 1rem;
     }
+    
     .AppLinkBox {
         background-image: url(./assets/Home/getAppLink.png);
         width: 194px;
@@ -1504,9 +1551,27 @@ button{
         margin-top: -18px;
         color: yellow;
     }
+    .copyright-div {
+        text-align: center;
+        font-size: 10px;
+        margin-left: -9rem;
+        margin-top: -2rem;
+        width: 176%;
+    }
+    .footer {
+        height: 36%;
+        margin-top: -21rem;
+    }
 
 }
 @media(max-width:320px){
+    .copyright-div {
+        text-align: center;
+        font-size: 10px;
+        margin-left: -7.5rem;
+        margin-top: -2rem;
+        width: 176%;
+    }
     .AppLinkBox {
         background-image: url(./assets/Home/getAppLink.png);
         width: 194px;

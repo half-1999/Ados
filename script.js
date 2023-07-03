@@ -96,6 +96,11 @@ function validateForm() {
     return true; // Allow form submission
   }
   
-  const currentYearElement = document.getElementById("currentYear");
-const currentYear = new Date().getFullYear();
-currentYearElement.textContent = currentYear;
+//   const currentYearElement = document.getElementById("currentYear");
+// const currentYear = new Date().getFullYear();
+// currentYearElement.textContent = currentYear;
+
+let date = new Date();
+        let year = date.getFullYear();
+        document.getElementById("rights").innerHTML=`Minda is a proprietary product of Comely Enterprises private Limited. ©️ ${year} COMELY ENTERPRISES PRIVATE LIMITED. ALL RIGHTS RESERVED.`
+
