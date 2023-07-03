@@ -6,6 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'MoGa ReZeKi DuA', sans-serif;
+
 }
 
 /* Add fonts */
@@ -668,8 +670,6 @@ button{
         height: 22%;
         margin-top: -7rem;
     } */
-    
-
 /* } */
 
 @media(max-width: 1024px) {
@@ -889,6 +889,10 @@ button{
         bottom: 52%;
         left: 29%;
         display: none;
+
+    }
+    #simple{
+        margin-top: -14px;
 
     }
     #asteroid{
@@ -1198,12 +1202,16 @@ button{
     }
     .phone {
         font-size: 1.5rem;
-    text-align: center;
-    margin-left: 13px;
-    margin-right: auto;
-    margin-top: -10px;
-    width: 91%;
+        text-align: center;
+        margin-left: 17px;
+        margin-right: auto;
+        margin-top: -3px;
+        width: 91%;
     }
+    #dblp{
+        margin-top: -14px;
+    }
+    
     .AppLinkBox {
         background-image: url(./assets/Home/getAppLink.png);
         width: 194px;
@@ -1420,6 +1428,20 @@ button{
         position: relative;
         top: 3rem;
         margin: 1rem;
+    }
+    .AppLinkBox {
+        background-image: url(./assets/Home/getAppLink.png);
+        width: 194px;
+        height: 72px;
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+        margin: 7px;
+        cursor: pointer;
+        position: absolute;
+        top: 23rem;
+        margin-left: -19px;
+        margin-right: auto;
     }
     .social-links {
         display: flex;
