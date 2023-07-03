@@ -204,13 +204,13 @@ function StartLocationLayer(){
 		let  DOB = localStorage.getItem("dob");
 		let  updateLocation = localStorage.getItem("state");
 		
-// 		if(!updateEmail || !DOB || !updateLocation)
-// 		{
-// 			UIUtils.ShowPopup(UIUtils.config.NOT_FIELD_DATA, ()=> {});
-// 			return;
-// 		}
-		
-		var requestBody=
+		if(!updateEmail || !DOB || !updateLocation)
+		{
+			UIUtils.ShowPopup(UIUtils.config.NOT_FIELD_DATA, ()=> {});
+			return;
+		}
+				
+			var requestBody=
 		{
 			"email": updateEmail,
 			"dob":DOB,
@@ -219,13 +219,15 @@ function StartLocationLayer(){
 
 		API.POST(API.uri.UPDATE_LOCATION_URL(), (j)=> {
 			StartAddMoneyLayer();
+			updatedlocation = true;
 			GenerateOrderForAddMoney(amountInput.text);
-			alreadyHaveData = true;
 		}, null, requestBody);
-	}
+	
+}
+		
+		
 	
 	OnTap.addOnTapButton(goAheadBtn, updateLocation);
-	
 }
 
 function StartAddMoneyLayer(){
@@ -262,6 +264,7 @@ function StartAddMoneyLayer(){
 	});
 	
 	OnTap.addOnTapButton(addMoneyBtn, ()=>{
+	alreadyHaveData = updatedlocation;
 // 	alreadyHaveData = updatedlocation;
 	if(!alreadyHaveData)
 	{

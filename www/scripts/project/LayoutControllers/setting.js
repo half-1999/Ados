@@ -24,7 +24,7 @@ function StartLayout(rntm , loginData)
 		runtime.getLayout(LAYOUT_NAME).addEventListener("afterlayoutstart", OnLayoutLoaded);
 	}
 
-	window.localStorage.getItem("fromDate", new Date().getDate() - 7);
+	window.localStorage.setItem("fromDate", new Date().getDate() - 7);
     window.localStorage.setItem("ToDate", new Date());
 	
 	runtime.goToLayout(LAYOUT_NAME);
@@ -99,8 +99,12 @@ const StartPassbookLayer = function(){
 
 	OnTap.addOnTapButton(backBtn, StartSettingsLayer);
 	OnTap.addOnTapButton(viewResult, ()=> {
-		UIUtils.ShowLoading(()=> setTimeout(()=> UIUtils.HideLoading(), 1000));
+		UIUtils.ShowLoading(()=> { 
+		   passbookIframe.contentWindow.UpdatePassbook();
+           setTimeout(()=> UIUtils.HideLoading(), 1000);
+		});
 	});
+	passbookIframe.contentWindow.UpdatePassbook();
 }
 
 const StartFaqLayer = function(){

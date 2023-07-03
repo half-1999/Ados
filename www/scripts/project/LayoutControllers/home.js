@@ -67,6 +67,7 @@ const OnLayoutLoaded = function(){
 const UpdateHomeBanner = function(){
 	let browserUrl;
 	const onBannerClicked = function(){
+		runtime.callFunction("PlayButtonClick")
 		if(browserUrl != null){
 			runtime.callFunction("GoToURL", browserUrl);
 		}
