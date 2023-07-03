@@ -1184,6 +1184,9 @@ button{
         margin-left: -31px;
         
     }
+    #dblp{
+        margin-top: -10px;
+    }
     .mobileBox {
         background-image: url(/assets/Home/mobileNo.png);
     background-repeat: no-repeat;
@@ -1214,16 +1217,16 @@ button{
     
     .AppLinkBox {
         background-image: url(./assets/Home/getAppLink.png);
-        width: 194px;
-        height: 72px;
-        text-align: center;
-        color: #fff;
-        padding-top: 20px;
-        margin: 7px;
-        cursor: pointer;
-        position: absolute;
-        top: 22rem;
-        margin-left: -13px;
+    width: 194px;
+    height: 72px;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    margin: 7px;
+    cursor: pointer;
+    position: absolute;
+    top: 26rem;
+    margin-left: -28px;
     margin-right: auto;
     }
     .contactFormDiv {
