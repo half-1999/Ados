@@ -124,7 +124,7 @@ const StartFaqLayer = function(){
 		let body = " ";
 		let escapedSubject = myEscapeURL(subject);
 		let escapedBody = myEscapeURL(body);
-		runtime.callFunction("GoToUrl", `mailto:contact@aimcomely.com?subject=${escapedSubject}&body=${escapedBody}`);
+		runtime.callFunction("GoToUrl", `mailto:${loginResponse.contactEmail}?subject=${escapedSubject}&body=${escapedBody}`);
 		
 		function myEscapeURL(url) {
 		  return encodeURIComponent(url).replace(/\+/g, "%20");

@@ -65,7 +65,7 @@ const StartTicketLayer = function(){
 	
 	let lagosBattleTickets = loginResponse.lagosbattleTickets;
 	let lagosBattleTicketsCount = lagosBattleTickets.length;
-	console.log(lagosBattleTicketsCount, "lagosBattleTicketsCount");
+// 	console.log(lagosBattleTicketsCount, "lagosBattleTicketsCount");
 	
 	if( lagosBattleTicketsCount< 7){// Hide 7th elements
 	 runtime.getInstanceByUid(175).isVisible=false;
@@ -201,11 +201,11 @@ const StartMatchmaking = function() {
     	        runtime.getInstanceByUid(32).text = " " + opponentName;
 	
     	        if (willConnect == true) {
-    	            console.log("Player Found");
+//     	            console.log("Player Found");
 					gameStartTimer = data.data.opponentObj.afterTimer;
 					setTimeout(()=>StartOpponentFoundLayer(data.data.opponentObj.resultTimer, data.data.opponentObj.winningId, data.data.opponentObj.name), gameStartTimer);
     	        } else {
-    	            console.log("No Player Found");
+//     	            console.log("No Player Found");
     	            setTimeout(StartCouldNotFoundLayer,  data.data.opponentObj.maxTimer*1000);
     	        }
     	    }
